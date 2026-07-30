@@ -1,0 +1,54 @@
+project:
+  name: adult-income-llm-capstone
+  random_state: 42
+
+data:
+  raw_path: data/raw/adult.csv
+  processed_path: data/processed/adult_clean.csv
+  target_column: income
+  test_size: 0.20
+
+mlflow:
+  tracking_uri: sqlite:///mlflow.db
+  experiment_name: adult_income_experiments
+  selection_metric: roc_auc
+
+models:
+  - run_name: logistic_regression_c_0_1
+    model_type: logistic_regression
+    parameters:
+      C: 0.1
+      max_iter: 2000
+      class_weight: balanced
+
+  - run_name: logistic_regression_c_1
+    model_type: logistic_regression
+    parameters:
+      C: 1.0
+      max_iter: 2000
+      class_weight: balanced
+
+  - run_name: random_forest_200
+    model_type: random_forest
+    parameters:
+      n_estimators: 200
+      max_depth: 15
+      min_samples_split: 5
+      class_weight: balanced
+      n_jobs: -1
+
+  - run_name: random_forest_400
+    model_type: random_forest
+    parameters:
+      n_estimators: 400
+      max_depth: 25
+      min_samples_split: 3
+      class_weight: balanced
+      n_jobs: -1
+
+  - run_name: gradient_boosting
+    model_type: gradient_boosting
+    parameters:
+      n_estimators: 150
+      learning_rate: 0.05
+      max_depth: 3
