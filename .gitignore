@@ -1,0 +1,38 @@
+# Python virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment variables and secrets
+.env
+
+# MLflow
+mlruns/
+mlflow.db
+
+# Raw and processed datasets
+data/raw/*
+!data/raw/.gitkeep
+
+data/processed/*
+!data/processed/.gitkeep
+
+# Trained models
+models/*
+!models/.gitkeep
+
+# Generated reports
+reports/*
+!reports/.gitkeep
+
+# IDE and operating-system files
+.vscode/
+.DS_Store
+Thumbs.db
