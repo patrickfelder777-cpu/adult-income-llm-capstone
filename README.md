@@ -517,3 +517,19 @@ GitHub:
 ```text
 https://github.com/patrickfelder777-cpu
 ```
+
+## Demo Video
+
+Watch the complete project demonstration:
+
+[Adult Income Prediction Assistant — Project Demo](https://drive.google.com/file/d/1V6juQ781uY_k30VU8_zLrBRtuNA8zjAj/view?usp=sharing)
+
+The demo includes:
+
+- The GitHub repository structure
+- A successful GitHub Actions workflow
+- Five MLflow experiment runs
+- Natural-language feature extraction
+- A prediction from the trained machine-learning model
+- An LLM-generated explanation
+- Graceful handling of incomplete input
