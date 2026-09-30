@@ -10,7 +10,7 @@ The application combines:
 - A Streamlit web interface
 - Automated testing with pytest
 - Continuous integration with GitHub Actions
-- Docker deployment
+- Docker packaging and local execution
 
 ## Project Overview
 
@@ -78,7 +78,6 @@ adult-income-llm-capstone/
 │   ├── raw/
 │   └── processed/
 ├── models/
-├── notebooks/
 ├── reports/
 ├── src/
 │   ├── __init__.py
