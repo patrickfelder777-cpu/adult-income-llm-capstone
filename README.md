@@ -1,5 +1,9 @@
 # Adult Income Prediction Assistant
 
+
+[![Adult Income Capstone CI](https://github.com/patrickfelder777-cpu/adult-income-llm-capstone/actions/workflows/ci.yml/badge.svg)](https://github.com/patrickfelder777-cpu/adult-income-llm-capstone/actions/workflows/ci.yml)
+
+
 An end-to-end machine-learning application that predicts whether a fictional profile resembles the historical UCI Adult Income category `<=50K` or `>50K`.
 
 The application combines:
